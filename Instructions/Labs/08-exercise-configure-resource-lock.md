@@ -59,9 +59,9 @@ In this task you apply a read-only resource lock to the storage account. What im
 
 ![Screenshot of the Add lock feature on a storage account set for a read-only lock.](./Media/read-only-lock-e7777623.png)
 
-5.  Enter a Lock name.
-6.  Verify the Lock type is set to Read-only.
-7.  Select **OK**.
+4.  Enter a Lock name.
+4.  Verify the Lock type is set to Read-only.
+4.  Select **OK**.
 
 ## Task 4: Add a container to the storage account
 
@@ -89,11 +89,11 @@ In this task, you add a container to the storage account. This container is wher
 
 ![Screenshot midway through task process of changing the lock type on a resource lock.](./Media/resource-lock-change-e5281189.png)
 
-6.  Scroll up until you find the Data storage section of the blade on the left of the screen.
-7.  Select **Containers**.
-8.  Select **+ Container**.
-9.  Enter a container name and select **Create**.
-10.  Your storage container should appear in your list of containers.
+5.  Scroll up until you find the Data storage section of the blade on the left of the screen.
+5.  Select **Containers**.
+5.  Select **+ Container**.
+5.  Enter a container name and select **Create**.
+5.  Your storage container should appear in your list of containers.
 
 You can now understand how the read-only lock prevented you from adding a container to your storage account. Once the lock type was changed (you could have removed it instead), you were able to add a container.
 
