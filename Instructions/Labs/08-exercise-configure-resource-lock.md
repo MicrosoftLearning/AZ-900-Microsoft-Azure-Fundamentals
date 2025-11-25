@@ -56,11 +56,12 @@ In this task you apply a read-only resource lock to the storage account. What im
 1.  Scroll down until you find the Settings section of the blade on the left of the screen.
 2.  Select **Locks**.
 3.  Select **+ Add**.
-![Screenshot of the Add lock feature on a storage account set for a read-only lock.](./Media/read-only-lock-e7777623-da42899c.png)
 
-4.  Enter a Lock name.
-5.  Verify the Lock type is set to Read-only.
-6.  Select **OK**.
+![Screenshot of the Add lock feature on a storage account set for a read-only lock.](./Media/read-only-lock-e7777623.png)
+
+5.  Enter a Lock name.
+6.  Verify the Lock type is set to Read-only.
+7.  Select **OK**.
 
 ## Task 4: Add a container to the storage account
 
@@ -69,11 +70,12 @@ In this task, you add a container to the storage account. This container is wher
 1.  Scroll up until you find the Data storage section of the blade on the left of the screen.
 2.  Select **Containers**.
 3.  Select **+ Container**.
-![Screenshot of the add container process outlined in this task.](./Media/add-container-steps-a6739e88-0c5e4c13.png)
+![Screenshot of the add container process outlined in this task.](./Media/add-container-steps-a6739e88.png)
 
 4.  Enter a container name and select **Create**.
 5.  You should receive an error message: Failed to create storage container.
-![Screenshot of the Failed to create storage container error message.](./Media/failed-create-warning-291af699-381fe98b.png)
+
+![Screenshot of the Failed to create storage container error message.](./Media/failed-to-create-warning-291af699.png)
 
 > [!NOTE]
 > The error message lets you know that you couldn't create a storage container because a lock is in place. The read-only lock prevents any create or update operations on the storage account, so you're unable to create a storage container.
@@ -84,13 +86,14 @@ In this task, you add a container to the storage account. This container is wher
 2.  Select **Locks**.
 3.  Select the read-only resource lock you created.
 4.  Change the Lock type to Delete and select **OK**.
-![Screenshot midway through task process of changing the lock type on a resource lock.](./Media/resource-lock-change-e5281189-aa175b31.png)
 
-5.  Scroll up until you find the Data storage section of the blade on the left of the screen.
-6.  Select **Containers**.
-7.  Select **+ Container**.
-8.  Enter a container name and select **Create**.
-9.  Your storage container should appear in your list of containers.
+![Screenshot midway through task process of changing the lock type on a resource lock.](./Media/resource-lock-change-e5281189.png)
+
+6.  Scroll up until you find the Data storage section of the blade on the left of the screen.
+7.  Select **Containers**.
+8.  Select **+ Container**.
+9.  Enter a container name and select **Create**.
+10.  Your storage container should appear in your list of containers.
 
 You can now understand how the read-only lock prevented you from adding a container to your storage account. Once the lock type was changed (you could have removed it instead), you were able to add a container.
 
@@ -101,10 +104,12 @@ You'll actually do this last task twice. Remember that there's a delete lock on 
 1.  Scroll up until you find Overview at the top of the blade on the left of the screen.
 2.  Select **Overview**.
 3.  Select **Delete**.
-![Screenshot of the deletion process for deleting a storage account.](./Media/storage-overview-page-ec75f9e6-e8e8a7d4.png)    
+
+![Screenshot of the deletion process for deleting a storage account.](./Media/storage-overview-page-ec75f9e6.png)    
 
 You should get a notification letting you know you can't delete the resource because it has a delete lock. In order to delete the storage account, you need to remove the delete lock.
-![Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.](./Media/storage-delete-lock-warning-5ea6faa5-ac48ca94.png)
+
+![Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.](./Media/storage-delete-lock-warning-5ea6faa5.png)
 
 ## Task 7: Remove the delete lock and delete the storage account
 
@@ -119,7 +124,8 @@ In the final task, you remove the resource lock and delete the storage account f
 7.  Select the storage account you used for this exercise.
 8.  Select **Delete**.
 9.  To prevent accidental deletion, Azure prompts you to enter the name of the storage account you want to delete. Enter the name of the storage account and select **Delete**.
-![Screenshot of the deletion confirmation message before deleting a storage account.](./Media/storage-account-delete-f4d60c3b-65598364.png)
+
+![Screenshot of the deletion confirmation message before deleting a storage account.](./Media/storage-account-delete-f4d60c3b.png)
 
 10. You should receive a message that the storage account was deleted. If you go Home &gt; Storage accounts, you should see that the storage account you created for this exercise is gone.
 
