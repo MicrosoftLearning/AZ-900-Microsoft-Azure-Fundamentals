@@ -114,7 +114,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
     2.  Copy the IP address that you see to the clipboard.
     3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you see something like this:
 
-        ![Screenshot of a web browser showing an error message that says the connection timed out.](./media/browser-request-timeout-d7cc0e02.png)
+        ![Screenshot of a web browser showing an error message that says the connection timed out.](./Media/browser-request-timeout-d7cc0e02.png)
     5.  Keep this browser tab open for later.
 
 ## Task 5: List the current network security group rules
@@ -225,7 +225,7 @@ Now that you configured network access to port 80, let's try to access the web s
     ```
 2.  As an optional step, refresh your browser tab that points to your web server. You see the home page:
 
-   ![A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.](./media/browser-request-successful-df21c6f1.png)
+   ![A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.](./Media/browser-request-successful-df21c6f1.png)
 
 Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.
 
