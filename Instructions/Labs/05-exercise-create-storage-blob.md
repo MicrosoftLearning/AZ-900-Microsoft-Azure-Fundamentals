@@ -41,7 +41,7 @@ In this task, you'll create a new storage account.
     | -------------------------------------------------------- | --------- |
     | Allow enabling anonymous access on individual containers | Checked   |
 
-    ![Screenshot showing how to enable anonymous-access containers on a storage account.](/media/storage-account-anonymous-containers.png)
+    ![Screenshot showing how to enable anonymous-access containers on a storage account.](./Media/storage-account-anonymous-containers.png)
      
 7.  Select **Review + create** to review your storage account settings and allow Azure to validate the configuration.
 8.  Once validated, select **Create**. Wait for the notification that the account was successfully created.
@@ -53,7 +53,7 @@ In this section, you'll create a Blob container and upload a picture.
 
 1.  Under **Data storage**, select **Containers**.
 
-    ![Screenshot of the Container add section of a storage account.](/media/storage-account-menu.png)
+    ![Screenshot of the Container add section of a storage account.](./Media/storage-account-menu.png)
 
 2.  Select **+ Add container** and complete the information.
     
@@ -86,7 +86,7 @@ In this section, you'll create a Blob container and upload a picture.
 2.  Select Change access level.
 3.  Set the Anonymous access level to Blob (anonymous read access for blobs only).
 
-![Screenshot with Change access level highlighted.](/media/blob-access-level.png)
+![Screenshot with Change access level highlighted.](./Media/blob-access-level.png)
 
 4.  Select OK.
 5.  Refresh the tab where you attempted to access the file earlier.
