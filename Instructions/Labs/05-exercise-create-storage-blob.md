@@ -1,8 +1,17 @@
 ---
 lab:
-    title: 'Exercise - Create a storage blob'
-    module: 'Module 01 - Describe the core architectural components of Azure'
+  title: Exercise - Create a storage blob
+  module: Module 01 - Describe the core architectural components of Azure
+  description: In this exercise, you create an Azure storage container, upload a file
+    to blob storage, and then configure blob storage to allow access to the file.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Storage
 ---
+
 <!--
 Edit the metadata above to manage the list of exercises in the home page of the GitHub site that gets generated.
 You can delete the module and edit index.md in the root of the repo to customize the display so that only the exercises are listed
