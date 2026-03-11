@@ -1,8 +1,16 @@
 ---
 lab:
-    title: 'Exercise - Create an virtual machine and configure as a web host'
-    module: 'Module 01 - Describe the core architectural components of Azure'
+  title: Exercise - Create an virtual machine and configure as a web host
+  module: Module 01 - Describe the core architectural components of Azure
+  description: In this exercise, you create an Azure virtual machine (VM), install
+    a web server, and upate the network configuration to allow access from the internet.
+  duration: 20 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
 ---
+
 <!--
 Edit the metadata above to manage the list of exercises in the home page of the GitHub site that gets generated.
 You can delete the module and edit index.md in the root of the repo to customize the display so that only the exercises are listed
