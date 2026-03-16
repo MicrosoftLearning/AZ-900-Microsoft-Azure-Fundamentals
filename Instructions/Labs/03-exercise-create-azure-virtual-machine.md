@@ -67,7 +67,8 @@ In this task, you use the Azure portal to create a Linux VM in the resource grou
     | Username                     | `azureuser`                                     |
     | Password                     | Enter a custom password                         |
     | Confirm password             | Reenter the custom password                     |
-    | Public inbound ports         | None                                            |
+    | Public inbound ports         | Leave default                                   |
+    | Select inbound ports         | Leave default                                   |
 
 
 1. Select **Review + create**, then select **Create**.
@@ -75,7 +76,7 @@ In this task, you use the Azure portal to create a Linux VM in the resource grou
 
 Your VM may take a few moments to provision. You named the VM **my-vm**, and will refer to the VM later based on that name.
 
-Wait until **Your deployment is complete.** before continuing.
+Wait until **Deployment is in progress.** is replaced by **Your deployment is complete.** before continuing.
 
 ## Task 3: Install Nginx
 After your VM is created, you'll use a Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
@@ -186,15 +187,15 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --output table    
     ```
     
-    You see this output:
+    You receive an output similar to this:
     
     ```output
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
-    default-allow-ssh  1000        22      Allow
+    SSH                300         22      Allow
     ```
     
-    You see the default rule, *default-allow-ssh*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely. The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers.
+    You see the default rule, *SSH*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely. The priority of this rule is 300. Rules are processed in priority order, with lower numbers processed before higher numbers.
 
 By default, a Linux VM's NSG allows network access only on port 22. This port enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
 
@@ -231,8 +232,8 @@ Here, you create a network security rule that allows inbound access on port 80 (
     ```output
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
-    default-allow-ssh  1000        22      Allow
-    allow-http          100        80      Allow    
+    SSH                300         22      Allow
+    allow-http         100         80      Allow    
     ```
 
 ## Task 7: Access your web server again
